@@ -9,7 +9,7 @@ function Overlay() {
   return (
     isOpen && (
       <div
-        className="fixed inset-0 bg-black bg-opacity-10 z-30 md:hidden"
+        className="fixed inset-0 bg-black bg-opacity-40 z-30 md:hidden"
         onClick={handleToggle}
       ></div>
     )

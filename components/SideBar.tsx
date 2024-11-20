@@ -10,13 +10,17 @@ function SideBar() {
 
   return (
     <div
-      className={`fixed md:relative top-0 left-0 h-full w-[250px] bg-white text-grey p-4 border-r transform transition-transform duration-300 z-40  row-span-2 ${
+      className={`fixed md:relative top-0 left-0  w-[270px] bg-white text-grey p-4 border-r transform transition-transform duration-300 z-40  row-span-2 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
-      } md:translate-x-0`}
+      } md:translate-x-0 h-screen`}
     >
-      <SideBarHeader />
-      <SideBarLinks />
-      <SideBarCard />
+      <div className="h-full flex flex-col">
+        <>
+          <SideBarHeader />
+          <SideBarLinks />
+        </>
+        <SideBarCard />
+      </div>
     </div>
   );
 }

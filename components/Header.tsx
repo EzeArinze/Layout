@@ -1,6 +1,6 @@
 "use client";
 
-import { BellDot, ChartNoAxesGantt } from "lucide-react";
+import { BellDot, Equal } from "lucide-react";
 import React from "react";
 import { Button } from "./ui/button";
 import DropDownMenu from "./DropDownMenu";
@@ -14,11 +14,8 @@ function Header() {
       <div className="w-full flex justify-between">
         <span className="flex gap-2">
           {/* Toggle button for small screens */}
+          <Equal className="cursor-pointer md:hidden" onClick={handleToggle} />
 
-          <ChartNoAxesGantt
-            className="cursor-pointer md:hidden"
-            onClick={handleToggle}
-          />
           <BellDot />
         </span>
         <span className="text-right flex gap-2">
