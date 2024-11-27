@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <header className="bg-white p-4 z-50">
-      <div className="w-full flex justify-between">
+      <div className="w-full flex justify-between px-4">
         <span className="flex gap-2">
           {/* Toggle button for small screens */}
           <Equal className="cursor-pointer md:hidden" onClick={handleToggle} />
